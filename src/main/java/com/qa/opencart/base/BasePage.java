@@ -139,12 +139,14 @@ public class BasePage {
 				path = "./src/main/java/com/qa/opencart/config/config.properties";
 			} else {
 				switch (env) {
-				case "qa":
-					path = "./src/main/java/com/qa/opencart/config/config.properties";
-				case "dev":
-					path = "./src/main/java/com/qa/opencart/config/dev/config.properties";
-				default:
-					System.out.println("Please pass the correct env value------" + env);
+					case "qa":
+						path = "./src/main/java/com/qa/opencart/config/config.properties";
+						break;
+					case "dev":
+						path = "./src/main/java/com/qa/opencart/config/dev/config.properties";
+						break;
+					default:
+						System.out.println("Please pass the correct env value------" + env);
 				}
 			}
 
